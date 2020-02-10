@@ -1,0 +1,41 @@
+:root {
+    box-sizing: border-box;
+    font-size: 10px;
+    --brown: rgba(0, 0, 0, 0.7);
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-inline-start: 0;
+    margin-top: 10px;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.tab:hover{
+    background-color: chocolate;
+}
+
+.tab--active {
+    background-color: chocolate;
+}
