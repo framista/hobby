@@ -16,14 +16,18 @@ body{
 }
 
 .tabs{
+    position: fixed;
+    width: 100%;
+    background-color: black;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     padding-inline-start: 0;
-    margin-top: 10px;
+    top: 0px;
+    padding-top: 10px;
 }
 
 .tab{
@@ -38,4 +42,34 @@ body{
 
 .tab--active {
     background-color: chocolate;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.image{
+    background-color: white;
+    margin: 10px;
+    border: 2px solid chocolate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 900px){
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .image{
+        width: 400px;
+        height: 400px;
+    }
 }
