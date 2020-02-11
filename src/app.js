@@ -37,9 +37,20 @@ images.forEach(image => {
 
 lightbox.addEventListener('click', e => {
     if (e.target !== e.currentTarget) return
+    closeLightbox(e)
+})
+
+document.onkeydown = e => {
+    e = e || window.event;
+    if (e.keyCode == 27 && lightbox.style.display !== "none") {
+        closeLightbox(e)
+    }
+};
+
+function closeLightbox(e){
     lightbox.classList.remove('lightbox--active')
     lightbox.style.display = "none"
-})
+}
 
 function unsplashImage(query) {
     fetch(`https://api.unsplash.com/search/photos?client_id=${APP_ACCESS_KEY}&query=${query}`, { method: 'get' }).
