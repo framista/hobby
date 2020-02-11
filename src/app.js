@@ -1,5 +1,5 @@
-import { APP_ACCESS_KEY } from './password'
-
+const APP_ACCESS_KEY = process.env.API_KEY
+console.log(process.env)
 const queries = ['plane', 'cat', 'nature', 'programming']
 
 const tabs = document.querySelectorAll('.tab')
