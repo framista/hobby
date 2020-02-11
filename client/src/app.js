@@ -1,6 +1,6 @@
 let APP_ACCESS_KEY = ""
 
-fetch('http://localhost:5050/key', {
+fetch('https://framista-hobby.herokuapp.com/key', {
     headers: {
         "Content-Type": "application/json"
     }
