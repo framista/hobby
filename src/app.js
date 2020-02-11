@@ -1,5 +1,5 @@
-const APP_ACCESS_KEY = process.env.API_KEY
-console.log(process.env)
+const APP_ACCESS_KEY = "571979a12220d62b87140453de25775e693882e0074a6c8993b308a1685cd469"
+// console.log(process.env)
 const queries = ['plane', 'cat', 'nature', 'programming']
 
 const tabs = document.querySelectorAll('.tab')
