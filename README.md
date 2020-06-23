@@ -9,4 +9,4 @@ Website with images from API and effect lightbox. The lightbox can be closed by 
 * HTML5
 
 ## Demo
-https://framista-hobbies.herokuapp.com/
+https://framista.github.io/hobby/client/index
